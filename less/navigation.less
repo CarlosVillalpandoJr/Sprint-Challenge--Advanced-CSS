@@ -8,6 +8,7 @@
     border-bottom: 1px solid @nav-border;
     margin-bottom: 15px;
 
+
     h1 {
         font-size: 4.0rem;
         margin-top: 10px;
@@ -19,6 +20,10 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
+
+        @media @phone {
+            width: 100%;
+        }
 
         a {
             font-size: 1.6rem;
