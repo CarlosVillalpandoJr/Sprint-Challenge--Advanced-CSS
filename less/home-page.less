@@ -56,8 +56,21 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 15px;
+    }
+
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        margin: 0 auto;
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -68,18 +81,31 @@
       }
 
       button {
-        .custom-button(@sea-shell, @ebony-clay)
+        .custom-button(@sea-shell, @ebony-clay);
+
+        @media @phone {
+          width: 100%;
+          padding: 15px 0;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        order: -1;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
       }
     }
   }
