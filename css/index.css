@@ -230,6 +230,9 @@ footer {
   .home .space-images .launch {
     display: none;
   }
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
